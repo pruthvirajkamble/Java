@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class Ambani 
+{
+	public static void main(String[] args) 
+	{
+		Scanner input = new Scanner(System.in);
+		int age = input.nextINT();
+		double var1 = input.nextDouble();
+		
+		if(age>=21 && var1 >= 10000000 ){
+		System.out.println("eligible");
+		}
+		else{
+			System.out.println("not eligible");
+		}
+	}
+}

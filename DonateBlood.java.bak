@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class s 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter your age : ");
+		int age = sc.nextInt();
+		System.out.print("Enter your weight : ");
+		double weight = sc.nextDouble();
+		System.out.print("Enter your name : ");
+		String str = sc.next().CharAt(0);
+		if(age>=21 && weight>50 ){
+			if(str=="cigarette" || str=="alcohol"){
+				System.out.println("not eligiable");
+			}
+		}else{
+			System.out.print("Its not able to donate the blood");
+		}
+	}
+}

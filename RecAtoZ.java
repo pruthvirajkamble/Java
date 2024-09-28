@@ -1,13 +1,18 @@
 class RecAtoZ
-{
+{   
+	static char ch = 'A';
 	public static void main(String[] args) 
 	{
-		alpha();
+		letter();
 	}
-	public static void alpha() 
+	public static void letter()
 	{
-		for (char n1='a'; n1>='z';n1++) 
-			System.out.println(n1);
-		alpha();
+       
+		System.out.println(ch++ + " ");
+		if(ch=='Z')
+			return;
+		letter();
+
 	}
+
 }
